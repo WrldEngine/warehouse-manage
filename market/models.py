@@ -30,7 +30,7 @@ class WareHouses(models.Model):
     price = models.FloatField()
 
     def __str__(self):
-        return str(self.remainder)
+        return str(self.id)
 
     class Meta:
         verbose_name = "ware_house"
@@ -43,7 +43,7 @@ class Product_Materials(models.Model):
     qty = models.FloatField()
 
     def __str__(self):
-        return str(self.qty)
+        return str(self.id)
 
     class Meta:
         verbose_name = "product_material"
